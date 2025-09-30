@@ -13,7 +13,7 @@ This project predicts used car selling_price (regression) from vehicle features.
 - **Preprocessing**: numeric imputation (median), categorical imputation + OneHot, target-encoding for high-cardinality (model) inside a ColumnTransformer.
 - **Pipeline**: Pipeline([('preprocessor', preprocessor), ('scaler', StandardScaler()), ('reg', estimator)]) (use 'reg' as step name).
 - **Models tuned**: RandomForestRegressor, GradientBoostingRegressor, XGBRegressor.
-- **Hyperparameter search**: RandomizedSearchCV (e.g. n_iter=30, cv=5) with multi-metric scoring: {"R2":"r2","MAE":"neg_mean_absolute_error","MSE":"neg_mean_squared_error"} and refit='R2'.
+- **Hyperparameter search**: RandomizedSearchCV (e.g. n_iter=30, cv=5) with multi-metric scoring {"R2":"r2","MAE":"neg_mean_absolute_error","MSE":"neg_mean_squared_error"} and refit='R2'.
 
 
 
